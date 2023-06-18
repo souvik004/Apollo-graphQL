@@ -4,6 +4,7 @@ import typeDefs from './schema/type-defs.js';
 import {Query} from './resolvers/Query.js'
 import {Category} from './resolvers/Category.js'
 import {Product} from './resolvers/Product.js'
+import {Mutation} from './resolvers/Mutation.js'
 import { categories, reviews, products } from './data/source.js';
 
 const server = new ApolloServer({
@@ -11,7 +12,8 @@ const server = new ApolloServer({
   resolvers: {
     Query,
     Category,
-    Product
+    Product,
+    Mutation
   }
 });
 
