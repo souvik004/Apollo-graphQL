@@ -34,4 +34,5 @@ export const Query = {
         const categoryId = args.id
         return categories.find(category => category.id === categoryId)
     },
+    // users: (parent, args, {categories}, info) => user
 }

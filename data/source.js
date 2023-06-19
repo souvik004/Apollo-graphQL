@@ -285,3 +285,66 @@ export const products = [
       productId: "47bf3941-9c8b-42c0-9c72-7f3985492a5b",
     },
   ];
+
+export const users = [
+  {
+    id: 1,
+    name: "John",
+    username: "john",
+    age: 20,
+    nationality: "CANADA",
+    friends: [
+      {
+        id: 2,
+        name: "Pedro",
+        username: "PedroTech",
+        age: 20,
+        nationality: "BRAZIL",
+      },
+      {
+        id: 5,
+        name: "Kelly",
+        username: "kelly2019",
+        age: 5,
+        nationality: "CHILE",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Pedro",
+    username: "PedroTech",
+    age: 20,
+    nationality: "BRAZIL",
+  },
+  {
+    id: 3,
+    name: "Sarah",
+    username: "cameron",
+    age: 25,
+    nationality: "INDIA",
+    friends: [
+      {
+        id: 2,
+        name: "Pedro",
+        username: "PedroTech",
+        age: 20,
+        nationality: "BRAZIL",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Rafe",
+    username: "rafe123",
+    age: 60,
+    nationality: "GERMANY",
+  },
+  {
+    id: 5,
+    name: "Kelly",
+    username: "kelly2019",
+    age: 5,
+    nationality: "CHILE",
+  },
+]; 

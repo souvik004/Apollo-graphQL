@@ -29,6 +29,12 @@ const typeDefs = `#graphql
     addCategory(input: AddCategoryInput!): Category!
   }
 
+  type User {
+     name: String!
+     email: String!
+     nationality: Nationality!
+  }
+
   type Query {
     hello: String
     #products(id: ID!): [Product!]!
@@ -36,15 +42,26 @@ const typeDefs = `#graphql
     product(id: ID!): Product
     categories: [Category!]! #cannot be null
     category(id: ID!): Category
+    users: [User!]! 
+    user(email: String!): User
   }
 
+  #in input no other type can be passed as argument
   input productFilterInput {
     onSale: Boolean
     avgRating: Int
+    #avgRating: Int = 3 incase of you want to use deafult value for a input field 
   }
 
   input AddCategoryInput {
     name: String!
+  }
+
+  enum Nationality {
+    INDIA 
+    US
+    UK 
+    CHINA 
   }
 `;
 
